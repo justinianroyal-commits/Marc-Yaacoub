@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Marc Yaacoub | Luxury Hair & Beauty Salon Constanța</title>
+
+<meta name="description" content="Salon premium de coafură și beauty în Constanța. Tuns, vopsit, balayage, coafat și servicii de înfrumusețare la standarde înalte. Marc Yaacoub Salon.">
+<meta name="keywords" content="coafor constanta, salon beauty constanta, tuns, balayage, vopsit, coafat, marc yaacoub">
+<meta name="author" content="Marc Yaacoub">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+  --black:#0d0d0d;
+  --gold:#c9a24e;
+  --white:#fff;
+  --gray:#aaa;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+
+body{background:var(--black);color:var(--white);line-height:1.6;}
+
+header{
+  position:relative;
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.6);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  position:relative;
+  z-index:2;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo span{color:var(--gold);}
+
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.hero{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  width:100%;
+  z-index:2;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:50px;
+  font-family:Playfair Display;
+}
+
+.hero p{color:var(--gray);margin:10px 0 30px;}
+
+.btn{
+  padding:12px 25px;
+  margin:5px;
+  border:1px solid var(--gold);
+  color:white;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.btn.gold{
+  background:var(--gold);
+  color:black;
+  font-weight:600;
+}
+
+section{
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-family:Playfair Display;
+  font-size:32px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#111;
+  padding:25px;
+  border:1px solid #222;
+  text-align:center;
+  transition:.3s;
+}
+
+.card:hover{transform:translateY(-5px);border-color:var(--gold);}
+
+.card i{font-size:30px;color:var(--gold);margin-bottom:10px;}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:10px;
+}
+
+.grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+.contact-box p{
+  margin:10px 0;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  border-top:1px solid #222;
+  color:#777;
+}
+
+/* MOBILE */
+.menu-toggle{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  nav ul{
+    display:none;
+    flex-direction:column;
+    background:black;
+    position:absolute;
+    top:70px;
+    right:20px;
+    padding:20px;
+  }
+
+  nav ul.active{display:flex;}
+
+  .menu-toggle{display:block;}
+
+  .hero h1{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+<div class="overlay"></div>
+
+<nav>
+<div class="logo">Marc <span>Yaacoub</span></div>
+
+<div class="menu-toggle"><i class="fa fa-bars"></i></div>
+
+<ul>
+<li><a href="#home">Acasă</a></li>
+<li><a href="#about">Despre</a></li>
+<li><a href="#services">Servicii</a></li>
+<li><a href="#gallery">Galerie</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Luxury Hair & Beauty Salon</h1>
+<p>Eleganță. Stil. Perfecțiune.</p>
+
+<a href="tel:+40727673770" class="btn">Sună acum</a>
+<a href="https://wa.me/40788666661" class="btn gold" target="_blank">WhatsApp</a>
+</div>
+</header>
+
+<section id="about">
+<h2>Despre Salon</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+Marc Yaacoub este un salon premium din Constanța, specializat în hairstyling modern, colorare profesională și servicii de beauty.
+Fiecare detaliu este gândit pentru a oferi o experiență luxoasă și rezultate impecabile.
+</p>
+</section>
+
+<section id="services">
+<h2>Servicii</h2>
+
+<div class="cards">
+<div class="card">
+<i class="fa-solid fa-scissors"></i>
+<h3>Tuns</h3>
+<p>Coafuri moderne pentru femei și bărbați.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-palette"></i>
+<h3>Colorare</h3>
+<p>Balayage, blond, ombre și vopsit profesional.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<h3>Coafat</h3>
+<p>Coafuri elegante pentru evenimente speciale.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-spa"></i>
+<h3>Beauty</h3>
+<p>Manichiură și pedichiură profesională.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Galerie</h2>
+
+<div class="grid">
+<img loading="lazy" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f" alt="tuns modern salon">
+<img loading="lazy" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="coafor profesional">
+<img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035" alt="colorare par">
+<img loading="lazy" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f" alt="beauty salon">
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="contact-box" style="text-align:center;">
+<p>Bulevardul Mamaia 232, Constanța</p>
+
+<p><a href="tel:+40727673770">0727 673 770</a></p>
+<p><a href="https://wa.me/40788666661">WhatsApp</a></p>
+<p><a href="https://instagram.com/marcyaacoub">Instagram</a></p>
+</div>
+</section>
+
+<footer>
+<p>Marc Yaacoub © 2026</p>
+</footer>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector("nav ul");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
